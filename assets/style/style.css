@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;	
+}
+#cp{
+	color: #fff;
+}
+body{
+	background-color: #E7EDF2;
+}
+#index{
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.mainBox{
+	width:520px;
+	padding:40px;
+	margin: 100px auto;
+	background-color: rgba(36, 49, 60, 0.9);
+	border-radius: 5px;
+	-webkit-box-shadow: -1px 0px 20px 1px rgba(41,41,41,1);
+	-moz-box-shadow: -1px 0px 20px 1px rgba(41,41,41,1);
+	box-shadow: -1px 0px 20px 1px rgba(41,41,41,1);
+	font-family: 'Titillium Web', sans-serif;
+	color: #fff;
+}
+.regLog{
+	display:block;
+	width: 220px;
+	height: 60px;
+	float:left;
+	text-align: center;
+	line-height: 60px;
+	background-color: #435159;
+	color: #C1BDBA;
+	font-size: 22px;
+	transition: all .3s linear;
+	cursor: pointer;
+}
+.tabSelected{
+	background-color: #1AB188;
+	color: #fff;
+}
+h2{
+	text-align: center;
+	font-size: 28px;
+	margin:30px 0 0 0;
+}
+h3{
+	text-align: center;
+	font-size:  25px;
+	margin: 0 0 15px 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+.regLog:hover, .logRegBtn:hover, .addPageSubmit:hover{
+	background-color: #179B77;
+	color: #fff;
+}
+.inp{
+	border: 1px solid #A0B3B0;
+	font-size: 23px;
+	background-color: transparent;
+	padding: 5px;
+	width:100%;
+	margin-top: 30px;
+}
+.logRegBtn{
+	width: 440px;
+	height: 80px;
+	border: none;	
+	color:  #fff;
+	font-size: 30px;
+	background-color: #1AB188;
+	margin-top: 30px;
+	outline: none;
+	transition: all .3s linear;
+	letter-spacing: 1px;
+}
+input:focus{
+	border:1px solid #1AB188 !important;
+	outline:none;
+}
+
+/* STUMBLE */
+
+#stumbleHeader{
+	height: 60px;
+	background-color: rgba(36, 49, 60, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+#stumble{
+	color: #fff;
+	width: 70px;
+	background-color: #1AB188;
+	height: 30px;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 15px;
+	border: none;
+	outline: none;
+	float: left;
+}
+.stmb{
+	float: left;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 25px;
+	margin: 15px 15px 0 15px;
+}
+#stmbWraper{
+	width: 180px;
+	margin: auto;
+}
+#stmbAcc{
+	float:right;
+}
+#stumbComm{
+	float:right;
+}
+#ifr{
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: calc(100vh - 60px);
+	width: 100%;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#stmbProfile, #stmbShare{
+	position:fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	background-color: #E7EDF2;
+	height: 50px;
+	display: none;
+}
+#socialMediaPics{
+	width: 235px;
+	margin: auto;
+}
+#socialMediaPics a > img{
+	margin: 8px 10px;
+	width: 35px;
+	outline: none;
+}
+#menuProfile{
+	margin: auto;
+	width: 550px;
+}
+#menuProfile > li{
+	display: inline;
+	margin: 0 5px;
+	font-size: 17px;
+	line-height: 50px;
+}
+#menuProfile > li:nth-child(odd){
+	cursor: pointer;
+}
+.interestsKeys{
+	border-bottom: 1px dashed #000;
+	margin-right: 5px;
+	cursor: pointer;
+	font-size: 13px;
+}
+#comments{
+	position:fixed;
+	top: 60px;
+	bottom: 0;
+	right: 0;
+	background-color: #E7EDF2;
+	width: 400px;
+	z-index: 999;
+	display: none;
+	padding: 20px;
+}
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.3);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 150px auto;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    width: 450px;
+    position: relative;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-100px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-100px; opacity:0}
+    to {top:0; opacity:1}
+}
+#close{
+	float: right;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    right: -20px;
+}
+#close:hover, #close:focus{
+	color: red;
+}
+.inputSettings{
+	border: 1px solid #A0B3B0;
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 15px;
+	outline: none;
+}
+.addPageSubmit{
+	width:100%;
+	background-color: #1AB188;
+	height:50px;
+	color: #fff;
+	letter-spacing: 1px;
+	border: none;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+	outline: none;
+	transition: all .3s linear;
+}
+#compInt{
+	margin: 5px 0 10px 0;
+	-moz-column-count: 3;
+	-moz-column-gap: 2.5em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 2.5em;
+	column-count: 3;
+	column-gap: 2.5em;	
+	list-style: none;
+}
+.errorRegister{
+	margin: 20px 0px -15px 30px;
+}
+#interestsList{
+	width: 100%;
+	border: none;
+	resize: none;
+}
+#passwordChanged, #passwordNotChanged{
+	height: 50px;
+	text-align: center;
+	position: fixed;
+	z-index: 10000;
+	background-color: green;
+	color: #fff;
+	top: 0;
+	right: 50%;
+	margin-right: -190px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 10px;
+	padding: 20px;
+	width: 350px;
+}
+ #passwordNotChanged{
+ 	background-color:red;
+ }
